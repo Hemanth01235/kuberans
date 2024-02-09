@@ -7,7 +7,6 @@ class TabBarInitial extends TabBarState {}
 
 class TabBarUpdated extends TabBarState {
   final int selectedIndex;
-
   TabBarUpdated(this.selectedIndex);
 }
 

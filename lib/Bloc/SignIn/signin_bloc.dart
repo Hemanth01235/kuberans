@@ -11,7 +11,7 @@ class SignInBloc extends Bloc<SignInEvent, SignInState> {
      try{
         final email = event.email;
         final password = event.password;
-        if(email == null || !RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$').hasMatch(email))
+        if(email == null && !RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$').hasMatch(email))
           {
             return emit(
                 SignInFailure('Enter valid email')
