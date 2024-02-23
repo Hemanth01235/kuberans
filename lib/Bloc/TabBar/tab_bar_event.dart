@@ -7,5 +7,4 @@ class TabBarChanged extends TabBarEvent {
   final int selectedIndex;
 
   TabBarChanged(this.selectedIndex);
-
 }

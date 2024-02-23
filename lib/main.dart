@@ -1,12 +1,16 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:kuberans/Bloc/SignIn/signin_bloc.dart';
 import 'package:kuberans/Bloc/TabBar/tab_bar_bloc.dart';
+import 'package:kuberans/firebase_options.dart';
 import 'Bloc/SignUp/sign_up_bloc.dart';
 import 'LoginScreen.dart';
 
-
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
@@ -37,5 +41,3 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
-
-
