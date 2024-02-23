@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "70342206073",
+    "project_id": "kuberans-943ee",
+    "storage_bucket": "kuberans-943ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70342206073:android:df4578e6da46a381dc2aa8",
+        "android_client_info": {
+          "package_name": "com.example.kuberans"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70342206073-kvrk8il9g3rufqbvem671n90veh1r1pp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAqnH2CUVzNU5b86Euc7LvmPl3ZCsuQlQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70342206073-kvrk8il9g3rufqbvem671n90veh1r1pp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "70342206073-7qg45s12o4k3ko8u0tjsn4gt62agvr4h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.kuberans.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
