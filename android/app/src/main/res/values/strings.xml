@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">Kuberans</string>
+    <string name="facebook_app_id">1346182579427413</string>
+    <string name="fb_login_protocol_scheme">fb1346182579427413</string>
+    <string name="facebook_client_token">a28e466d4e20968a9d5a3590ed5a7188</string>
+
+</resources>

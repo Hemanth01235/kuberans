@@ -1,4 +1,8 @@
 import 'package:bloc/bloc.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:kuberans/Bloc/SignUp/SignUp.dart';
+import 'package:kuberans/Controller/user_controller.dart';
 import 'package:meta/meta.dart';
 
 part 'signin_event.dart';
@@ -8,27 +12,18 @@ class SignInBloc extends Bloc<SignInEvent, SignInState> {
   SignInBloc() : super(SignInInitial()) {
     on<SignInRequest>((event, emit) async {
       emit(SignInLoading());
-     try{
+
+      try{
         final email = event.email;
         final password = event.password;
-        if(email == null && !RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$').hasMatch(email))
-          {
-            return emit(
-                SignInFailure('Enter valid email')
-            );
-          }
-        if(password.length < 6 )
-          {
-            return emit(
-              SignInFailure('password cannot be less than 6 characters'),
-            );
-          }
+
         await Future.delayed(const Duration(seconds: 2),(){
           return emit(SignInSuccess(uid: '$email-$password'));
         });
-     }catch(e){
+    }
+     catch(e){
        return emit(SignInFailure(e.toString()));
      }
-    });
+     });
   }
 }
